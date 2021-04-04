@@ -7,7 +7,7 @@ if ($_FILES["upload_file"]["name"] != '') {
         $new_file_name = rand() . '.' . $extension;
         $path = $_POST["hidden_folder_name"] . '/' . $new_file_name;
         if (move_uploaded_file($_FILES["upload_file"]["tmp_name"], $path)) {
-            echo 'Image Uploaded';
+            echo 'Fichier telecharger';
         } else {
             echo 'There is some error';
         }
