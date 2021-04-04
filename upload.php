@@ -9,11 +9,11 @@ if ($_FILES["upload_file"]["name"] != '') {
         if (move_uploaded_file($_FILES["upload_file"]["tmp_name"], $path)) {
             echo 'Fichier telecharger';
         } else {
-            echo 'There is some error';
+            echo 'Une erreur est survenue';
         }
     } else {
-        echo 'Invalid Image File';
+        echo 'Photo invalide';
     }
 } else {
-    echo 'Please Select Image';
+    echo 'Veuillez selectionner une image';
 }
